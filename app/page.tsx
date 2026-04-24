@@ -1,41 +1,91 @@
 "use client";
 
-import { useState } from "react";
-
 export default function Home() {
   return (
-    <div style={{ fontFamily: "Arial", padding: "40px" }}>
-      <h1>Suason Nursing Services LLC</h1>
+    <main className="min-h-screen bg-white text-slate-900">
 
-      <p>
-        We help Home Health and Hospice agencies prepare for surveys,
-        strengthen documentation, and manage ADR & TPE audits.
-      </p>
+      {/* Header */}
+      <header className="border-b">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <h1 className="font-semibold text-lg">
+            Suason Nursing Services LLC
+          </h1>
 
-      <ContactForm />
-    </div>
+          <nav className="space-x-6 text-sm">
+            <a href="/" className="hover:underline">Home</a>
+            <a href="/services" className="hover:underline">Services</a>
+            <a href="#contact" className="hover:underline">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="max-w-7xl mx-auto px-6 py-24 text-center">
+        <h2 className="text-5xl font-bold mb-6">
+          Compliance & Survey Support
+        </h2>
+
+        <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-10">
+          We help Home Health and Hospice agencies prepare for surveys,
+          strengthen documentation, and successfully manage ADR & TPE audits.
+        </p>
+
+        <button className="bg-slate-900 text-white px-8 py-3 rounded-lg">
+          Request Consultation
+        </button>
+      </section>
+
+      {/* Services */}
+      <section id="services" className="bg-slate-50 py-20">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+          <Service title="Survey Preparation" />
+          <Service title="Documentation Training" />
+          <Service title="ADR & TPE Support" />
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="max-w-xl mx-auto px-6 py-24">
+        <h3 className="text-3xl font-semibold mb-6 text-center">
+          Request a Consultation
+        </h3>
+
+        <form className="space-y-4">
+          <input
+            className="w-full border p-3 rounded"
+            placeholder="Agency Name"
+          />
+
+          <input
+            className="w-full border p-3 rounded"
+            placeholder="Email"
+          />
+
+          <button
+            type="submit"
+            className="w-full bg-slate-900 text-white p-3 rounded"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t py-6 text-center text-sm text-slate-500">
+        © {new Date().getFullYear()} Suason Nursing Services LLC · 714‑749‑8848
+      </footer>
+
+    </main>
   );
 }
 
-function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
-
-  if (submitted) {
-    return <p>Thank you. We will contact you shortly.</p>;
-  }
-
+function Service({ title }: { title: string }) {
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSubmitted(true);
-      }}
-    >
-      <input placeholder="Agency Name" required />
-      <br /><br />
-      <input placeholder="Email" required />
-      <br /><br />
-      <button type="submit">Submit</button>
-    </form>
+    <div className="bg-white border rounded-lg p-6 text-center">
+      <h4 className="font-semibold text-lg">{title}</h4>
+      <p className="text-slate-600 mt-2">
+        Professional compliance support tailored to your agency.
+      </p>
+    </div>
   );
 }
