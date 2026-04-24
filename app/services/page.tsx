@@ -12,7 +12,10 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-white text-slate-900">
       <header className="border-b sticky top-0 bg-white/95 backdrop-blur-sm z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="font-semibold text-lg animate-fade-in-up">Suason Nursing Services LLC</h1>
+          <div className="flex items-center gap-3 animate-fade-in-up">
+            <img src="/sns-logo.png" alt="SNS Logo" className="h-10 w-auto" />
+            <span className="font-semibold text-lg">Suason Nursing Services LLC</span>
+          </div>
           <NavBar />
         </div>
       </header>
