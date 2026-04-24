@@ -11,11 +11,14 @@ export default function Home() {
             Suason Nursing Services LLC
           </h1>
 
-          <nav className="space-x-6 text-sm">
-            <a href="/" className="hover:underline">Home</a>
-            <a href="/services" className="hover:underline">Services</a>
-            <a href="#contact" className="hover:underline">Contact</a>
-          </nav>
+          
+<nav className="space-x-6 text-sm">
+  <a href="/">Home</a>
+  <a href="/services">Services</a>
+  <a href="/about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
         </div>
       </header>
 
@@ -36,7 +39,7 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section id="services" className="bg-slate-50 py-20">
+      <section className="bg-slate-50 py-20">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
           <Service title="Survey Preparation" />
           <Service title="Documentation Training" />
@@ -50,15 +53,32 @@ export default function Home() {
           Request a Consultation
         </h3>
 
-        <form className="space-y-4">
+        <form
+          action="https://defaultebf992d4d1414e51a1c0a7a3bd7dd3.88.environment.api.powerplatform.com/powerautomate/automations/direct/workflows/fc649135a825400391dade79a9119a3c/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Q40927k20aWEiAnjLoYORLnOUiuLcP9OQBMVAS30Lyk"
+          method="POST"
+          className="space-y-4"
+        >
           <input
+            name="agency"
             className="w-full border p-3 rounded"
             placeholder="Agency Name"
+            required
           />
 
           <input
+            name="email"
+            type="email"
             className="w-full border p-3 rounded"
             placeholder="Email"
+            required
+          />
+
+          <textarea
+            name="message"
+            className="w-full border p-3 rounded"
+            placeholder="How can we help?"
+            rows={4}
+            required
           />
 
           <button
