@@ -12,7 +12,7 @@ export default function AboutPage() {
       <header className="border-b sticky top-0 bg-white/95 backdrop-blur-sm z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3 animate-fade-in-up">
-            <img src="/file.svg" alt="SNS Logo" className="h-10 w-auto" />
+            <img src="/sns-logo.svg" alt="SNS Logo" className="h-12 w-auto" />
             <span className="font-semibold text-lg">Suason Nursing Services LLC</span>
           </div>
           <NavBar />
@@ -22,17 +22,12 @@ export default function AboutPage() {
         <h1 className="text-4xl font-bold mb-6 animate-fade-in-up">About Suason Nursing Services</h1>
         <div className="animate-fade-in-up delay-100">
           <p className="mb-4 text-lg text-slate-600">
-            Suason Nursing Services LLC provides professional compliance and consulting support to Home Health and Hospice agencies.
+            Suason Nursing Services LLC was founded by Romel Suason, RN, and Angela Suason, LVN, experienced Home Health and Hospice nurses who recognized the critical need for improved clinical documentation, comprehensive staff training, and ongoing professional support.
           </p>
         </div>
         <div className="animate-fade-in-up delay-200">
           <p className="mb-4 text-lg text-slate-600">
-            Services include survey preparation, documentation training, and ADR & TPE audit support tailored to agency needs.
-          </p>
-        </div>
-        <div className="animate-fade-in-up delay-300">
-          <p className="text-lg text-slate-600">
-            Our mission is to help agencies remain compliant, reduce risk, and deliver high-quality patient care.
+            Through firsthand experience, the founders observed gaps in documentation practices and limited educational resources for nursing staff. Suason Nursing Services was established to address these challenges by supporting nurses in their daily work environment and helping organizations strengthen compliance, operational performance, and overall quality of care in both Home Health and Hospice settings.
           </p>
         </div>
       </div>

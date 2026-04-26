@@ -1,3 +1,4 @@
+import React from "react";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import ServiceCard from "../../components/ServiceCard";
@@ -10,15 +11,12 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
-      <header className="border-b sticky top-0 bg-white/95 backdrop-blur-sm z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-3 animate-fade-in-up">
-            <img src="/file.svg" alt="SNS Logo" className="h-10 w-auto" />
-            <span className="font-semibold text-lg">Suason Nursing Services LLC</span>
-          </div>
-          <NavBar />
-        </div>
-      </header>
+      <style>{`
+        svg {
+          fill: #0B2F5B;
+          stroke: #0B2F5B;
+        }
+      `}</style>
       <section className="max-w-7xl mx-auto px-6 py-20">
         <h1 className="text-4xl font-bold mb-6 animate-fade-in-up">Services</h1>
         <div className="grid md:grid-cols-3 gap-8">
