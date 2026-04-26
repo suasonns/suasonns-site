@@ -8,6 +8,8 @@ export default function Header() {
           <img
             src="/sns-logo.svg"
             alt="SNS Logo"
+            width={48}
+            height={48}
             className="h-12 w-auto"
           />
           <span className="font-semibold text-lg">
