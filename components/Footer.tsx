@@ -10,6 +10,7 @@ export default function Footer() {
         </a>
       </div>
       <div className="mt-2 text-xs text-slate-400">
+        Serving California, Southern California, and nationwide.<br />
         All rights reserved. This website is for informational purposes only and does not constitute medical, legal, or financial advice.
       </div>
     </footer>
