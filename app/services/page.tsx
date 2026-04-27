@@ -1,6 +1,5 @@
 import React from "react";
-import NavBar from "../../components/NavBar";
-import Footer from "../../components/Footer";
+
 import ServiceCard from "../../components/ServiceCard";
 
 export const metadata = {
@@ -40,7 +39,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <Footer />
+
     </main>
   );
 }
